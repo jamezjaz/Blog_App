@@ -1,4 +1,10 @@
 <h1><%= @post.title %></h1>
+<p>
+  Tags:
+  <% @post.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
 <p><%= @post.body %></p>
 <%= render partial: 'comments/form' %>
 <%= link_to "<< Back to Posts List", posts_path %>
