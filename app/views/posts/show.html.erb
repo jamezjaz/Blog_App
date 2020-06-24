@@ -5,6 +5,11 @@
     <%= link_to tag.name, tag_path(tag) %>
   <% end %>
 </p>
+<p>
+<% if @post.image.exists? %>
+<%= image_tag @post.image.url %><br/>
+<% end %>
+</p>
 <p><%= @post.body %></p>
 <%= render partial: 'comments/form' %>
 <%= link_to "<< Back to Posts List", posts_path %>
