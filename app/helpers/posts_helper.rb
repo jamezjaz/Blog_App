@@ -3,4 +3,3 @@ module PostsHelper
     params.require(:post).permit(:title, :body, :tag_list, :image)
   end
 end
-

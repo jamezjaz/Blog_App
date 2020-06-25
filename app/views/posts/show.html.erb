@@ -12,9 +12,9 @@
 </p>
 <p><%= @post.body %></p>
 <%= render partial: 'comments/form' %>
-<%= link_to "<< Back to Posts List", posts_path %>
-<%= link_to "edit", edit_post_path(@post) %>
-<%= link_to "delete", post_path(@post), method: :delete, data: {confirm: "Really delete the article?"} %>
+<%= link_to '<< Back to Posts List', posts_path %>
+<%= link_to 'edit', edit_post_path(@post) %>
+<%= link_to 'delete', post_path(@post), method: :delete, data: {confirm: 'Really delete the article?'} %>
 
 <h3>Comments (<%= @post.comments.size %>)</h3>
 <%= render partial: 'posts/comment', collection: @post.comments %>

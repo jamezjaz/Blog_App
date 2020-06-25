@@ -1,5 +1,5 @@
 {
-  "name": "blog_app",
-  "private": true,
-  "dependencies": {}
+  'name': 'blog_app',
+  'private': true,
+  'dependencies': {}
 }

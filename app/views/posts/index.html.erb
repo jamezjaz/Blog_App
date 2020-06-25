@@ -1,6 +1,6 @@
 <h1>All Posts</h1>
 
-<ul id="posts">
+<ul id='posts'>
   <% @posts.each do |post| %>
     <li>
     <%= link_to post.title, post_path(post) %>
@@ -9,5 +9,5 @@
   <% end %>
 </ul>
 
-<%= link_to "Create a New Post", new_post_path, class: "new_article" %>
-<%= link_to "View all tags", tags_path %> 
+<%= link_to 'Create a New Post', new_post_path, class: 'new_article' %>
+<%= link_to 'View all tags', tags_path %> 

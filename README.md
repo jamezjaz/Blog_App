@@ -3,7 +3,7 @@
 
 ## Stack
 - Language: Ruby 2.6.5
-- Web Framework: Rails 5.2.3
+- Web Framework: Rails 5.2.4.3
 - Storage: SQLite3
 
 ## How To Install
